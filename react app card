@@ -1,0 +1,84 @@
+APP.css
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+body {
+  background-color:#EFEBE9;
+  box-sizing: border-box;
+}
+h1, h2 {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  text-align: left;
+}
+h2 {
+  color: #9E9E9E;
+  font-size: 15px;
+}
+.card {
+  background-color: #FFFFFF;
+  margin: 50px auto;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px #BDBDBD;
+}
+.card-image {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  max-height: 200px;
+}
+.card-copy {
+  padding: 20px;
+}
+
+
+
+app.js file 
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+
+    <>
+      <div className="card">
+        <div className="card-image">
+        <img src= "https://images.unsplash.com/photo-1521139869420-edaae1bc7b9a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="abc" />
+        </div>
+        <div className="card-title">
+          <h1>Swat</h1>
+          <p>Swat District, also known as the Swat</p>
+        </div>
+        <div className="card-copy">
+          <p>Swat District, also known as the Swat valley, is a district in the Malakand Division of Khyber Pakhtunkhwa, pakistan, with a population of 2,309,570 per the 2017 national census , Swat is the 15th-largest district of Khyber Pakhtunkhaw with many popular tourist attractions.</p>
+        </div>
+      </div>
+    </>
+  
+  );
+}
+
+export default App;
+
+
+
+
+index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+ //If you want to start measuring performance in your app, pass a function
+ //to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
